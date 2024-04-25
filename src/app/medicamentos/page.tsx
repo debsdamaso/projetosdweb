@@ -1,9 +1,14 @@
+// pages/medicamentos/page.tsx
 import Image from "next/image";
 import { NavBar } from "@/components/NavBar";
 import ButtonGroup from "@/components/ButtonGroup";
 
 export default function Medicamentos() {
-  const buttons = ["Atualizar Medicamento", "Cadastrar Medicamento", "Listar Medicamentos"];
+  const buttons = [
+    { text: "Atualizar Medicamento", route: "/medicamentos/update" },
+    { text: "Cadastrar Medicamento", route: "/medicamentos/new" },
+    { text: "Listar Medicamentos", route: "/medicamentos/show" },
+  ];
 
   return (
     <main className="flex flex-col items-center min-h-screen">
